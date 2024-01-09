@@ -94,9 +94,9 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 <p>*****</br>&nbsp;&nbsp;****</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
 
-<% for (int s=0; s<cpt; s++) { %>
-    <% for (int t=1; t<=cpt-s; t++ ) { %>
-    <%= "+" %>
+<% for (int s=1; s<cpt; s++) { %>
+    <% for (int t=1; t<=cpt; t++ ) { %>
+    <%= "*" %>
     <% } %>
 
     <% for (int u=0; u<=s; u++) { %>
@@ -106,9 +106,9 @@
 </br> 
 <% } %>
 
-<% for  (int v=cpt; v>0; v-- ) { %>
+<% for  (int v=cpt -1 ; v>=1; v-- ) { %>
     <% for (int w=1; w<=v; w++) { %>
-       <%="+"%>
+       <%="*"%>
  <% } %>
  </br>
 <% } %>
