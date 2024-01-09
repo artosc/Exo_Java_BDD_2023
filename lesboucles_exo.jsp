@@ -61,7 +61,7 @@
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 
 <% for (int m=0; m<cpt; m++) { %>
-    <% for (int n=0; n<=cpt-m; n++ ) { %>
+    <% for (int n=1; n<=cpt-m; n++ ) { %>
     <%= "+" %>
     <% } %>
 
