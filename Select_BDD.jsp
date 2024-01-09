@@ -45,6 +45,24 @@
 <h2>Exercice 2 : Année de recherche</h2>
 <p>Créer un champ de saisie permettant à l'utilisateur de choisir l'année de sa recherche.</p>
 
+<form action="#" method="post">
+    <label for="inputValeur">Saisir l'année du Film' : </label>
+    <input type="text" id="inputValeur" name="valeur">
+    <input type="submit" value="Afficher">
+</form>
+
+<%-- Récupération de la valeur saisie par l'utilisateur --%>
+<% String valeur = request.getParameter("valeur"); %>
+    
+<%-- Vérification de l'existence de la valeur --%>
+<% if (valeur != null && !valeur.isEmpty()) { %>
+
+string sql= "SELECT idFilm, titre, année FROM Film WHERE année = valeur";
+
+<% } %>
+
+
+
 <h2>Exercice 3 : Modification du titre du film</h2>
 <p>Créer un fichier permettant de modifier le titre d'un film sur la base de son ID (ID choisi par l'utilisateur)</p>
 
