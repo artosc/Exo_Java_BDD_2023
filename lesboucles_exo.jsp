@@ -63,7 +63,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 
 <% for (int m=0; m<cpt; m++) { %>
-   <% for (int n=0; n<=cpt; n++ ) { %>
+   <% for (int n=cpt; n>=0; n-- ) { %>
     &nbsp;
 <% } %>
     <% for (int o=0; o<=m; o++) { %>
