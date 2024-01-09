@@ -94,6 +94,26 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 <p>*****</br>&nbsp;&nbsp;****</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
 
+<% for (int s=0; s<cpt; s++) { %>
+    <% for (int t=1; t<=cpt-s; t++ ) { %>
+    <%= "+" %>
+    <% } %>
+
+    <% for (int u=0; u<=s; u++) { %>
+    <%= "*" %>
+    <% } %>
+    
+</br> 
+<% } %>
+
+<% for  (int v=cpt; v>0; v-- ) { %>
+    <% for (int w=1; w<=v; w++) { %>
+       <%="*"%>
+ <% } %>
+ </br>
+<% } %>
+
+
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
