@@ -91,16 +91,16 @@
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
 
-<% for (int s=1; s<=cpt; s++) { %>
-    <% for (int t=1; t<=cpt; t++ ) { %>
+<% for (int s = 1; s <= cpt; s++) { %>
+    <% for (int t = 1; t <= cpt; t++ ) { %>
     <%= "*" %>
     <% } %>
     
 </br> 
 <% } %>
 
-<% for  (int v=cpt -1 ; v>=1; v-- ) { %>
-    <% for (int w=1; w<=v; w++) { %>
+<% for  ( s = cpt - 1 ; s >= 1; s-- ) { %>
+    <% for (int w = 1; w <= s; w++) { %>
        <%= "*" %>
  <% } %>
  </br>
