@@ -60,9 +60,9 @@
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 
-<% for (int m=0; m<cpt; m++) { %>
-    <% for (int n=1; n<=cpt-m; n++ ) { %>
-    <%= "+" %>
+<% for (int m = 0; m < cpt; m++) { %>
+    <% for (int n=2 * (cpt - m); n>=0; n-- ) { %>
+    &nbsp;
     <% } %>
 
     <% for (int o=0; o<=m; o++) { %>
@@ -110,12 +110,8 @@
 
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
-<p>5 x 1 = 5</p>
-<p>5 x 2 = 10</p>
-<p>5 x 3 = 15</p>
-<p>5 x 4 = 20</p>
-<p>5 x 5 = 25</p>
+
+
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
