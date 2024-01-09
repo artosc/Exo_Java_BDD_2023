@@ -62,15 +62,16 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 
-<% for (int m=1; m<cpt; m++) { %>
-   <% for (int n=1; n<=cpt; n++ ) { %>
+<% for (int m=0; m<cpt; m++) { %>
+   <% for (int n=0; n<=cpt; n++ ) { %>
     &nbsp;
 <% } %>
-    <% for (int o=1; o<=m; o++) { %>
+    <% for (int o=0; o<=m; o++) { %>
        <%= "*" %>
     <% } %>
    </br> 
 <% } %>
+
 
 echo "Combien d'étoiles ?"
 read -r value
