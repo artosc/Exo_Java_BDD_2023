@@ -42,8 +42,8 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*</br>**</br>***</br>****</br>*****</p>
 
-<% for  (i = 1; i <= cpt; i++ ) { %>
-    <% for (j = 1; j <= i; j--) { %>
+<% for  (int k = cpt; k > 0; k-- ) { %>
+    <% for (l = 0; l < k; l++) { %>
        <%= "*" %>
         </br>
  <%   } %>
