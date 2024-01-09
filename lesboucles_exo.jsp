@@ -59,8 +59,6 @@
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 
 <% for (int m=0; m<cpt; m++) { %>
     <% for (int n=0; n<=cpt-m; n++ ) { %>
@@ -74,25 +72,36 @@
 </br> 
 <% } %>
 
-
-echo "Combien d'étoiles ?"
-read -r value
-for (( i=1 ; i<$value ; i++ )); do
-        for (( j=1 ; j<=$value-i ; j++ )); do
-                echo -n "+"
-        done
-        for ((k=1;k<=$i;k++)); do
-        echo -n "*"
-        done
-        echo
-done
-echo
-
-
 <h2>Exercice 5 : Triangle isocele</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;***</br>&nbsp;****</br>*****</p>
+
+<% for (int p=0; p<=cpt; p++) { %>
+    <% for (int q=1; q<=cpt-p; q++ ) { %>
+    <%= "." %>
+    <% } %>
+
+    <% for (int r=1; r<=p; r++) { %>
+    <%= "*" %>
+    <% } %>
+    
+</br> 
+<% } %>
+
+
+echo "Combien d'étoiles ?"
+read -r value
+for (( i=0 ; i<=$value ; i++ )); do
+        for (( j=1 ; j<=$value-i ; j++ )); do
+                echo -n " "
+        done
+        for (( k=1 ; k <= i ; k++ )); do
+        echo -n " *"
+        done
+        echo
+done
+echo
 
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
