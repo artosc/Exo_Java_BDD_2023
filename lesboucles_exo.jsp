@@ -52,8 +52,8 @@
 
 <% for  (int k=cpt; k>0; k-- ) { %>
     <% for (int l=1; l<=k; l++) { %>
-       <%= "*" %>
- <%   } %>
+       <%="*"%>
+ <% } %>
  </br>
 <% } %>
 
@@ -62,7 +62,7 @@
 
 <% for (int m=0; m<cpt; m++) { %>
     <% for (int n=0; n<=cpt-m; n++ ) { %>
-    &nbsp;
+    <%= " " %>
     <% } %>
 
     <% for (int o=0; o<=m; o++) { %>
@@ -89,19 +89,6 @@
 </br> 
 <% } %>
 
-
-echo "Combien d'étoiles ?"
-read -r value
-for (( i=0 ; i<=$value ; i++ )); do
-        for (( j=1 ; j<=$value-i ; j++ )); do
-                echo -n " "
-        done
-        for (( k=1 ; k <= i ; k++ )); do
-        echo -n " *"
-        done
-        echo
-done
-echo
 
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
