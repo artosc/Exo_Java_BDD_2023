@@ -29,7 +29,7 @@
 <p>Ecrire le code afin de produire un carré d'étoile</p>
 
 
-<% int cpt = Integer.parseInt(valeur); %>
+<%int cpt = Integer.parseInt(valeur);%>
 for  ( int i = 1; i <= cpt; i++ )
 {
     for ( int j = 1; j <= cpt; j++)
