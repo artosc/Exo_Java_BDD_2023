@@ -57,7 +57,7 @@
 <%-- Vérification de l'existence de la valeur --%>
 <% if (valeur != null && !valeur.isEmpty()) { %>
 
-string sql= "SELECT idFilm, titre, année FROM Film WHERE année = valeur";
+<% string sql= "SELECT idFilm, titre, année FROM Film WHERE année = valeur"; %>
 
 <% } %>
 
