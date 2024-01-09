@@ -62,12 +62,13 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 
-<% for  (int k=cpt; k>0; k-- ) { %>
-    <% for (int l=1; l<=k; l++) { %>
-       &nbsp;
- <%   } %>
-        <%= "*" %>
-
+<% for (int m=1; m<cpt; m++) { %>
+   <% for (int n=1; n<=cpt; n++ ) { %>
+    &nbsp;
+<% } %>
+    <% for (int o=1; o<=m; o++) { %>
+       <%= "*" %>
+    <% } %>
 <% } %>
 
 
