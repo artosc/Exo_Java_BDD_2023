@@ -3,7 +3,7 @@
 <head>
 <title>Boucles</title>
 </head>
-<body bgcolor=white>
+<body bgcolor=grey>
 <h1>Exercices sur les boucles</h1>
 <form action="#" method="post">
     <label for="inputValeur">Saisir le nombre d'étoiles : </label>
@@ -40,12 +40,20 @@
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 
-<% for  (int k = cpt; k > 0; k-- ) { %>
-    <% for (int l = 0; l < k; l++) { %>
+<% for  (int k=cpt; k>0; k-- ) { %>
+    <% for (int l=1; l<=k; l++) { %>
        <%= "*" %>
-        </br>
  <%   } %>
+ </br>
 <% } %>
+
+
+
+
+
+
+
+
 
 
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
