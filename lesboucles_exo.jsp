@@ -91,13 +91,9 @@
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
 
-<% for (int s=1; s<cpt; s++) { %>
+<% for (int s=1; s<=cpt; s++) { %>
     <% for (int t=1; t<=cpt; t++ ) { %>
     <%= "*" %>
-    <% } %>
-
-    <% for (int u=0; u<=s; u++) { %>
-    <%= "+" %>
     <% } %>
     
 </br> 
