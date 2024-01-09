@@ -39,8 +39,6 @@
 
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
-<p>*</br>**</br>***</br>****</br>*****</p>
 
 <% for  (int k = cpt; k > 0; k-- ) { %>
     <% for (int l = 0; l < k; l++) { %>
