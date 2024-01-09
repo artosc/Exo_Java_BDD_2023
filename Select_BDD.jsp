@@ -60,7 +60,7 @@
 <% if (valeur != null && !valeur.isEmpty()) { %>
 <% int annee = Integer.parseInt(valeur); %>
 
-<% string sql= "SELECT idFilm, titre, année FROM Film WHERE année = annee"; %>
+<% "SELECT idFilm, titre, année FROM Film WHERE année = annee"; %>
 
 <% } %>
 
