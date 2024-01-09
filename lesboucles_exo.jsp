@@ -56,12 +56,6 @@
 <p>*****</br>****</br>***</br>**</br>*</p>
 
 
-<% for  (i = 1; i <= cpt; i-- ) { %>
-    <% for (j = 1; j <= i; j++) { %>
-       <%= "*" %>
-        </br>
- <%   } %>
-<% } %>
 
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
