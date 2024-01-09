@@ -40,17 +40,6 @@
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 
-<% for  (int k=cpt; k>0; k-- ) { %>
-    <% for (int l=1; l<=k; l++) { %>
-       <%= "*" %>
- <%   } %>
- </br>
-<% } %>
-
-
-<h2>Exercice 3 : Triangle rectangle inversé</h2>
-<p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
-
 <% for  (int m=0; m<cpt; m++ ) { %>
     <% for (int n=0; n<=m; n++) { %>
        <%= "*" %>
@@ -58,7 +47,15 @@
  </br>
 <% } %>
 
+<h2>Exercice 3 : Triangle rectangle inversé</h2>
+<p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 
+<% for  (int k=cpt; k>0; k-- ) { %>
+    <% for (int l=1; l<=k; l++) { %>
+       <%= "*" %>
+ <%   } %>
+ </br>
+<% } %>
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
