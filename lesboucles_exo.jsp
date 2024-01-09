@@ -69,7 +69,21 @@
     <% for (int o=1; o<=m; o++) { %>
        <%= "*" %>
     <% } %>
+   </br> 
 <% } %>
+
+echo "Combien d'étoiles ?"
+read -r value
+for (( i=1 ; i<$value ; i++ )); do
+        for (( j=1 ; j<=$value-i ; j++ )); do
+                echo -n "+"
+        done
+        for ((k=1;k<=$i;k++)); do
+        echo -n "*"
+        done
+        echo
+done
+echo
 
 
 <h2>Exercice 5 : Triangle isocele</h2>
