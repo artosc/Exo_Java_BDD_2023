@@ -62,7 +62,7 @@
 
 <% for (int m=0; m<cpt; m++) { %>
     <% for (int n=0; n<=cpt-m; n++ ) { %>
-    <%= " " %>
+    &nbsp;
     <% } %>
 
     <% for (int o=0; o<=m; o++) { %>
@@ -79,7 +79,7 @@
 
 <% for (int p=0; p<=cpt; p++) { %>
     <% for (int q=1; q<=cpt-p; q++ ) { %>
-    <%= " " %>
+    &nbsp; 
     <% } %>
 
     <% for (int r=1; r<=p; r++) { %>
