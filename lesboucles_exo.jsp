@@ -77,7 +77,7 @@
 
 <% for (int p=0; p<=cpt; p++) { %>
     <% for (int q=1; q<=cpt-p; q++ ) { %>
-<%= "+" %>
+    &nbsp;
     <% } %>
 
     <% for (int r=1; r<=p; r++) { %>
